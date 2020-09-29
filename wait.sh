@@ -3,7 +3,7 @@
 container_id=$1
 attacker_ip=$2
 
-sleep 5m
+sleep 45m
 
 iptables --table filter --delete INPUT --protocol tcp --source $attacker_ip --destination 172.20.0.1 --destination-port 10000 --jump ACCEPT
 iptables --table filter --delete INPUT --protocol tcp --source 0.0.0.0/0 --destination 172.20.0.1 --destination-port 10000 --jump DROP
