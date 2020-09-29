@@ -6,5 +6,3 @@ Monitors for attackers entering systems, and block form other entrace
 Recycles the container
 #### wait.sh
 Waits for time set, runs recycle.sh
-
-This is an amazing readme created by Rose Riggs
