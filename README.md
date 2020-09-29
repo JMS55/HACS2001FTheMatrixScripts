@@ -7,4 +7,4 @@ Recycles the container
 #### wait.sh
 Waits for time set, runs recycle.sh
 
-This is an amazing readme created by Rose Riggs
+*This is an amazing readme created by Rose Riggs*
