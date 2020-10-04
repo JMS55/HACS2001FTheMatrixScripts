@@ -8,3 +8,9 @@ Recycles the container
 Waits for time set, runs recycle.sh
 
 ## Honey
+
+## Misc
+#### Host VM login
+To SSH into the HostVM: `ssh root@jump.aces.umd.edu -p15831`
+Username: `root`
+Password: `2fmatrix`
