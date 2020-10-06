@@ -17,6 +17,7 @@ Waits for time set, runs recycle.sh
 
 #### Snoopy
 - pct restore 102 /var/lib/vz/dump/vzdump-lxc-101-2020_10_04-17_46_07.tar --storage local-lvm --net0 name=eth0,ip=172.20.0.3/16,bridge=vmbr0,gw=172.20.0.1
+- pct push 102 snoopy/ /snoopy
 
 ## Misc
 #### Host VM login
