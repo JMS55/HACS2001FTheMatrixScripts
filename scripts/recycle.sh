@@ -29,7 +29,7 @@ pct destroy $container_id
 pct create ${new_container_id} /var/lib/vz/template/cache/ubuntu-16.04-standard_16.04.5-1_amd64.tar.gz --storage local-lvm --net0 name=eth0,ip=${new_container_ip}/16,bridge=vmbr0,gw=172.20.0.1
 pct start $new_container_id
 # TODO: Add honey
-# TODO: Add snoopy logger if needed
+# TODO: Add network_logger if needed
 pct mount $new_container_id
 
 # Start MITM
