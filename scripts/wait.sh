@@ -1,6 +1,7 @@
 #!/bin/bash
 
-attacker_ip=$1
+container_id=$1
+attacker_ip=$2
 
 # Wait 45m for the attacker to do things
 sleep 45m
