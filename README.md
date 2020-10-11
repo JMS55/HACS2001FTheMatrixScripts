@@ -1,7 +1,7 @@
 # HACS200 Group 1F - TheMatrix
 ## Scripts
 ## How to Start
-Run `nohup start.sh`
+Run `nohup ./start.sh` from `/root`
 #### monitor.sh
 Monitors for attackers entering systems, and block form other entrace
 #### recycle.sh
