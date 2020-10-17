@@ -9,6 +9,8 @@
 1. `git clone https://github.com/JMS55/HACS2001FTheMatrixScripts`
 2. `cp HACS2001FTheMatrixScripts/scripts/* /root`
 3. `cp HACS2001FTheMatrixScripts/configs/mitm_config.js /root`
+4. `./MITM/install.sh`
+5. Send attackers through MITM `iptables --table nat --insert PREROUTING 1 --destination 128.8.37.122 --protocol tcp --destination-port 22 --jump DNAT --to-destination 172.20.0.1:10000`
 
 ## Creating Container Templates
 **TODO**: Add honey to both
