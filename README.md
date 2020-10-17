@@ -1,28 +1,30 @@
 # HACS200 Group 1F - TheMatrix
-## Scripts
-## How to Start
+
+## Host VM Login
+* To SSH into the HostVM: `ssh root@jump.aces.umd.edu -p15831`
+* Username: `root`
+* Password: `2fmatrix`
+
+## Setting up the SDI From Scratch
+1. `git clone https://github.com/JMS55/HACS2001FTheMatrixScripts`
+2. `cp HACS2001FTheMatrixScripts/scripts/* /root`
+3. `cp HACS2001FTheMatrixScripts/configs/mitm_config.js /root`
+
+## Creating Container Templates
+**TODO**: Add honey to both
+* Control:
+    * `pct create 201 /var/lib/vz/template/cache/ubuntu-16.04-standard_16.04.5-1_amd64.tar.gz --storage local-lvm --net0 name=eth0,ip=172.20.0.2/16,bridge=vmbr0,gw=172.20.0.1`
+    * `pct template 201`
+* Experimental (snoopy)
+    * `pct create 202 /var/lib/vz/template/cache/ubuntu-16.04-standard_16.04.5-1_amd64.tar.gz --storage local-lvm --net0 name=eth0,ip=172.20.0.2/16,bridge=vmbr0,gw=172.20.0.1`
+    * **TODO**: Give container internet access
+    * `pct start 202`
+    * `pct enter`
+    * `wget -O snoopy-install.sh https://github.com/a2o/snoopy/raw/install/doc/install/bin/snoopy-install.sh && chmod 755 snoopy-install.sh && ./snoopy-install.sh stable`
+    * `exit`
+    * `pct stop 202`
+    * **TODO**: Revoke container internet access
+    * `pct template 202`
+
+## Starting Scripts
 Run `nohup ./start.sh` from `/root`
-#### monitor.sh
-Monitors for attackers entering systems, and block form other entrace
-#### recycle.sh
-Recycles the container
-#### wait.sh
-Waits for time set, runs recycle.sh
-
-## Honey
-
-## Containers
-#### Control
-- pct create 101 /var/lib/vz/template/cache/ubuntu-16.04-standard_16.04.5-1_amd64.tar.gz --storage local-lvm --net0 name=eth0,ip=172.20.0.2/16,bridge=vmbr0,gw=172.20.0.1
-
-- vzdump 101 --mode snapshot
-
-#### Snoopy
-- pct restore 102 /var/lib/vz/dump/vzdump-lxc-101-2020_10_04-17_46_07.tar --storage local-lvm --net0 name=eth0,ip=172.20.0.3/16,bridge=vmbr0,gw=172.20.0.1
-- pct push 102 snoopy/ /snoopy
-
-## Misc
-#### Host VM login
-To SSH into the HostVM: `ssh root@jump.aces.umd.edu -p15831`
-Username: `root`
-Password: `2fmatrix`
