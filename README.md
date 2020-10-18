@@ -11,7 +11,7 @@
     2. `cp HACS2001FTheMatrixScripts/scripts/* /root`
     3. `chmod +x /root/start.sh`
     4. `cp HACS2001FTheMatrixScripts/configs/mitm_config.js /root`
-    5. `./MITM/install.sh`
+    5. `/root/MITM/install.sh`
 1. Setup networking
     1. `ip addr add 128.8.37.122/255.255.0.0 dev enp4s1`
     2. `sysctl -w net.ipv4.ip_forward=1`
@@ -26,7 +26,7 @@
 * Control:
     * `pct create 201 /var/lib/vz/template/cache/ubuntu-16.04-standard_16.04.5-1_amd64.tar.gz --storage local-lvm --net0 name=eth0,ip=172.20.0.2/16,bridge=vmbr0,gw=172.20.0.1`
     * `pct template 201`
-* Experimental (snoopy)
+* Experimental (Snoopy)
     * `pct create 202 /var/lib/vz/template/cache/ubuntu-16.04-standard_16.04.5-1_amd64.tar.gz --storage local-lvm --net0 name=eth0,ip=172.20.0.2/16,bridge=vmbr0,gw=172.20.0.1`
     * **TODO**: Give container internet access
     * `pct start 202`
@@ -38,4 +38,4 @@
     * `pct template 202`
 
 ## Starting Scripts
-Run `nohup ./start.sh` from `/root`
+Run `nohup /root/start.sh &`
