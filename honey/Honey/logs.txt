@@ -1,0 +1,160 @@
+Thu Sep 10 2020 08:51:02 GMT-0400 (Eastern Daylight Time) - Credit Card Account 5835 
+    (withdrawal transaction at Veum - Ernser using card ending with ***4566 for SYP 791.88 in account ***76346957): $418.22
+Sun Aug 09 2020 17:32:27 GMT-0400 (Eastern Daylight Time) - Checking Account 7818 
+    (payment transaction at Abshire - Trantow using card ending with ***8676 for NPR 930.18 in account ***22050234): $165.53
+Tue Mar 24 2020 19:20:40 GMT-0400 (Eastern Daylight Time) - Savings Account 2064 
+    (withdrawal transaction at Kris, Gerhold and McGlynn using card ending with ***7098 for KGS 535 in account ***48304156): $496.18
+Mon Mar 09 2020 07:25:33 GMT-0400 (Eastern Daylight Time) - Home Loan Account 0512 
+    (deposit transaction at Wiza, Mills and Abbott using card ending with ***5625 for MOP 677.99 in account ***43841630): $873.09
+Fri Nov 15 2019 16:02:25 GMT-0500 (Eastern Standard Time) - Home Loan Account 5996 
+    (withdrawal transaction at Ortiz - Zieme using card ending with ***1175 for CAD 440.56 in account ***58450866): $949.2
+Sat Sep 19 2020 04:12:23 GMT-0400 (Eastern Daylight Time) - Investment Account 9443 
+    (invoice transaction at Mayert, McCullough and Harber using card ending with ***0185 for CDF 921.67 in account ***40503902): $658.54
+Sat Oct 10 2020 03:18:08 GMT-0400 (Eastern Daylight Time) - Money Market Account 1434 
+    (payment transaction at Stehr - Hamill using card ending with ***6365 for HRK 393.98 in account ***75330466): $352.42
+Mon Aug 17 2020 03:25:28 GMT-0400 (Eastern Daylight Time) - Savings Account 8427 
+    (invoice transaction at Nitzsche LLC using card ending with ***0294 for MKD 792.83 in account ***98560758): $716.55
+Sun May 31 2020 22:46:55 GMT-0400 (Eastern Daylight Time) - Investment Account 7515 
+    (payment transaction at Pacocha - Mertz using card ending with ***4702 for UAH 712.56 in account ***93545060): $702.1
+Fri Oct 16 2020 15:37:37 GMT-0400 (Eastern Daylight Time) - Money Market Account 7593 
+    (withdrawal transaction at Jacobson and Sons using card ending with ***7493 for TZS 594.72 in account ***57080079): $68.04
+Thu Dec 12 2019 10:12:56 GMT-0500 (Eastern Standard Time) - Home Loan Account 0391 
+    (invoice transaction at Nicolas - Walter using card ending with ***9438 for RUB 532.89 in account ***62474121): $480.81
+Fri Feb 07 2020 13:58:43 GMT-0500 (Eastern Standard Time) - Savings Account 2176 
+    (withdrawal transaction at Harris - Schaden using card ending with ***6839 for CNY 605.9 in account ***15903436): $36.09
+Fri Apr 10 2020 03:30:02 GMT-0400 (Eastern Daylight Time) - Auto Loan Account 0835 
+    (deposit transaction at Gislason - Morissette using card ending with ***3364 for PLN 779.89 in account ***81560537): $589.53
+Wed Jan 29 2020 08:08:37 GMT-0500 (Eastern Standard Time) - Checking Account 4902 
+    (withdrawal transaction at McCullough - Runte using card ending with ***0650 for NIO 308.81 in account ***59628900): $571.06
+Mon Feb 10 2020 03:50:02 GMT-0500 (Eastern Standard Time) - Personal Loan Account 4460 
+    (withdrawal transaction at Friesen, Zemlak and Brown using card ending with ***1761 for LRD 931.31 in account ***03580475): $947.96
+Sat Nov 16 2019 22:44:27 GMT-0500 (Eastern Standard Time) - Savings Account 7050 
+    (payment transaction at Hauck and Sons using card ending with ***6215 for CDF 42.1 in account ***22946601): $479.2
+Sun Aug 02 2020 21:30:02 GMT-0400 (Eastern Daylight Time) - Checking Account 7058 
+    (withdrawal transaction at Bergstrom - Reichel using card ending with ***0599 for XAU 387.52 in account ***17868153): $721
+Thu Jan 23 2020 01:57:39 GMT-0500 (Eastern Standard Time) - Investment Account 8656 
+    (deposit transaction at Balistreri and Sons using card ending with ***7202 for SAR 366.71 in account ***63827698): $337.81
+Thu Jul 16 2020 17:32:44 GMT-0400 (Eastern Daylight Time) - Credit Card Account 4633 
+    (withdrawal transaction at Kertzmann LLC using card ending with ***3469 for SBD 875.44 in account ***01966093): $480.37
+Sun Jun 28 2020 04:40:24 GMT-0400 (Eastern Daylight Time) - Savings Account 1379 
+    (deposit transaction at Grant - Torphy using card ending with ***4886 for ZWL 85.54 in account ***26784285): $699.72
+Thu Aug 06 2020 12:14:40 GMT-0400 (Eastern Daylight Time) - Investment Account 4712 
+    (invoice transaction at Stamm Group using card ending with ***8942 for LKR 364.76 in account ***28125387): $156.3
+Fri Jul 24 2020 17:23:46 GMT-0400 (Eastern Daylight Time) - Checking Account 3600 
+    (deposit transaction at Graham and Sons using card ending with ***9590 for PKR 520.55 in account ***76264798): $625.73
+Sun Apr 26 2020 12:06:12 GMT-0400 (Eastern Daylight Time) - Personal Loan Account 2670 
+    (withdrawal transaction at Hermiston LLC using card ending with ***6465 for SDG 346.5 in account ***72371177): $594.63
+Wed Sep 09 2020 08:59:20 GMT-0400 (Eastern Daylight Time) - Auto Loan Account 8259 
+    (payment transaction at Streich - Johnston using card ending with ***0388 for IRR 373.85 in account ***66453222): $925.49
+Thu Jul 30 2020 22:04:47 GMT-0400 (Eastern Daylight Time) - Money Market Account 4268 
+    (payment transaction at Kreiger, Halvorson and Skiles using card ending with ***7988 for MMK 224.68 in account ***48667173): $558.73
+Fri Mar 06 2020 21:00:45 GMT-0500 (Eastern Standard Time) - Investment Account 8670 
+    (withdrawal transaction at Heaney LLC using card ending with ***5912 for CUP 159.27 in account ***19479838): $15.96
+Thu Oct 08 2020 19:25:47 GMT-0400 (Eastern Daylight Time) - Savings Account 5122 
+    (deposit transaction at Zemlak - Torp using card ending with ***6855 for XPT 178.04 in account ***23916630): $524.89
+Sun Nov 24 2019 12:23:00 GMT-0500 (Eastern Standard Time) - Checking Account 2683 
+    (invoice transaction at Collins and Sons using card ending with ***3897 for SGD 27.78 in account ***83258618): $887.65
+Tue Sep 22 2020 12:55:14 GMT-0400 (Eastern Daylight Time) - Home Loan Account 4102 
+    (invoice transaction at Kohler, Orn and Beatty using card ending with ***9173 for UYU 630.37 in account ***46492709): $115.73
+Fri Mar 20 2020 05:13:04 GMT-0400 (Eastern Daylight Time) - Savings Account 3558 
+    (deposit transaction at Botsford - Beier using card ending with ***0064 for RUB 149.7 in account ***78750639): $16.75
+Wed Jan 22 2020 00:29:00 GMT-0500 (Eastern Standard Time) - Home Loan Account 9441 
+    (payment transaction at Moen and Sons using card ending with ***7590 for ERN 408.81 in account ***95967539): $436.17
+Fri Nov 29 2019 10:50:26 GMT-0500 (Eastern Standard Time) - Savings Account 2878 
+    (withdrawal transaction at Ondricka, O'Connell and Mann using card ending with ***0974 for AED 606.74 in account ***49850601): $228.7
+Thu Feb 27 2020 08:39:19 GMT-0500 (Eastern Standard Time) - Investment Account 4038 
+    (payment transaction at Moore - Maggio using card ending with ***7510 for LRD 39.92 in account ***94742913): $933.13
+Tue Nov 05 2019 23:18:31 GMT-0500 (Eastern Standard Time) - Money Market Account 2343 
+    (payment transaction at Purdy, Rohan and Kshlerin using card ending with ***5177 for UZS 71.36 in account ***10002414): $211.53
+Sun May 17 2020 18:07:27 GMT-0400 (Eastern Daylight Time) - Investment Account 0443 
+    (withdrawal transaction at Bayer, Abernathy and Predovic using card ending with ***8494 for LRD 289.04 in account ***29817686): $979.5
+Sat Jun 13 2020 04:15:29 GMT-0400 (Eastern Daylight Time) - Money Market Account 4346 
+    (payment transaction at Mills - Murazik using card ending with ***7234 for BWP 210.5 in account ***89621877): $580.63
+Thu Feb 06 2020 10:04:30 GMT-0500 (Eastern Standard Time) - Money Market Account 0660 
+    (payment transaction at Haley - Runolfsdottir using card ending with ***5814 for CNY 223.51 in account ***39536180): $467.95
+Wed Jan 01 2020 17:51:07 GMT-0500 (Eastern Standard Time) - Checking Account 7808 
+    (payment transaction at Kihn LLC using card ending with ***2716 for JMD 571.68 in account ***60123321): $856.61
+Tue Jun 09 2020 04:09:35 GMT-0400 (Eastern Daylight Time) - Money Market Account 3553 
+    (invoice transaction at Herzog, Lakin and Weissnat using card ending with ***6003 for XAU 547.91 in account ***64733603): $407.73
+Wed Sep 30 2020 06:31:13 GMT-0400 (Eastern Daylight Time) - Checking Account 3676 
+    (invoice transaction at VonRueden - Batz using card ending with ***2494 for GYD 816.07 in account ***98660239): $163.1
+Sat Aug 08 2020 11:58:49 GMT-0400 (Eastern Daylight Time) - Home Loan Account 8930 
+    (deposit transaction at Stracke - Gibson using card ending with ***1411 for INR 553 in account ***26097221): $560.07
+Mon Dec 30 2019 16:22:26 GMT-0500 (Eastern Standard Time) - Savings Account 6471 
+    (withdrawal transaction at Murphy, Doyle and Bruen using card ending with ***5383 for MAD 611.99 in account ***75320180): $887.34
+Thu Aug 13 2020 14:41:52 GMT-0400 (Eastern Daylight Time) - Investment Account 8365 
+    (deposit transaction at Lang - Labadie using card ending with ***3855 for PKR 926.45 in account ***11814397): $149.97
+Wed Jan 29 2020 08:38:37 GMT-0500 (Eastern Standard Time) - Personal Loan Account 6083 
+    (deposit transaction at Keeling - Hyatt using card ending with ***4663 for GMD 555.99 in account ***22748174): $744.23
+Thu May 28 2020 07:25:13 GMT-0400 (Eastern Daylight Time) - Home Loan Account 1672 
+    (payment transaction at Dicki, Schimmel and Reichel using card ending with ***3842 for KZT 542.12 in account ***67947803): $688.8
+Sun Nov 03 2019 18:54:11 GMT-0500 (Eastern Standard Time) - Money Market Account 8642 
+    (invoice transaction at Gorczany - Boyle using card ending with ***1426 for IDR 159.89 in account ***04555091): $149.79
+Fri Sep 11 2020 02:12:40 GMT-0400 (Eastern Daylight Time) - Home Loan Account 3142 
+    (payment transaction at Hahn - Goldner using card ending with ***9789 for HKD 883.72 in account ***03989911): $346.3
+Sun Nov 03 2019 19:26:03 GMT-0500 (Eastern Standard Time) - Savings Account 3122 
+    (invoice transaction at Greenholt - Terry using card ending with ***0600 for XFU 371.66 in account ***16839306): $300.42
+Fri Jan 03 2020 21:52:15 GMT-0500 (Eastern Standard Time) - Personal Loan Account 8917 
+    (deposit transaction at Hahn, Glover and Kassulke using card ending with ***8428 for JMD 581.22 in account ***52643909): $212.77
+Wed Sep 23 2020 02:04:40 GMT-0400 (Eastern Daylight Time) - Credit Card Account 7284 
+    (payment transaction at Ebert - Hirthe using card ending with ***0091 for BND 949.22 in account ***46769478): $968.53
+Tue Feb 11 2020 10:01:26 GMT-0500 (Eastern Standard Time) - Home Loan Account 9400 
+    (invoice transaction at Zieme - King using card ending with ***1672 for GBP 569.53 in account ***08807856): $653.38
+Fri Mar 20 2020 12:52:13 GMT-0400 (Eastern Daylight Time) - Home Loan Account 9810 
+    (invoice transaction at Sanford, Luettgen and Gerlach using card ending with ***9025 for XDR 988.96 in account ***28179275): $114.01
+Mon Mar 30 2020 08:01:51 GMT-0400 (Eastern Daylight Time) - Money Market Account 5056 
+    (invoice transaction at Hodkiewicz and Sons using card ending with ***4324 for CHF 948.99 in account ***63272028): $666.62
+Thu Oct 15 2020 00:11:44 GMT-0400 (Eastern Daylight Time) - Savings Account 5989 
+    (payment transaction at Gerhold - Schiller using card ending with ***8681 for CZK 930.33 in account ***68362774): $722.84
+Fri Aug 14 2020 01:18:01 GMT-0400 (Eastern Daylight Time) - Checking Account 9289 
+    (withdrawal transaction at Stracke Inc using card ending with ***0135 for PLN 266.72 in account ***00995736): $294.38
+Mon Oct 05 2020 10:46:37 GMT-0400 (Eastern Daylight Time) - Credit Card Account 3394 
+    (payment transaction at Klocko - Larson using card ending with ***8850 for SEK 161.36 in account ***44392660): $853.86
+Wed Mar 11 2020 04:25:50 GMT-0400 (Eastern Daylight Time) - Investment Account 0902 
+    (withdrawal transaction at Casper - Larson using card ending with ***1590 for SAR 629.83 in account ***28157433): $985.75
+Tue Sep 22 2020 17:18:00 GMT-0400 (Eastern Daylight Time) - Home Loan Account 7173 
+    (deposit transaction at VonRueden - Ryan using card ending with ***5725 for JPY 259.7 in account ***24111206): $871.77
+Sat Jan 18 2020 15:35:18 GMT-0500 (Eastern Standard Time) - Auto Loan Account 0088 
+    (payment transaction at Schroeder Inc using card ending with ***5391 for YER 916.06 in account ***73005539): $487.79
+Wed Oct 07 2020 07:31:38 GMT-0400 (Eastern Daylight Time) - Checking Account 3167 
+    (invoice transaction at Brown LLC using card ending with ***8960 for GYD 109.97 in account ***60413264): $837.51
+Tue May 26 2020 06:49:36 GMT-0400 (Eastern Daylight Time) - Checking Account 8464 
+    (payment transaction at Jacobs - Von using card ending with ***8685 for MAD 14.9 in account ***28073341): $817.81
+Wed Dec 11 2019 23:50:45 GMT-0500 (Eastern Standard Time) - Credit Card Account 9859 
+    (payment transaction at Reynolds - Gibson using card ending with ***5736 for SHP 221.43 in account ***53866817): $994.27
+Wed Mar 18 2020 07:50:44 GMT-0400 (Eastern Daylight Time) - Auto Loan Account 7955 
+    (invoice transaction at Dooley, Grant and Hessel using card ending with ***2759 for DJF 395.94 in account ***58331197): $308.29
+Sun Dec 22 2019 09:35:20 GMT-0500 (Eastern Standard Time) - Home Loan Account 8098 
+    (withdrawal transaction at Oberbrunner Group using card ending with ***1786 for LSL 249.67 in account ***82833067): $801.13
+Mon Nov 11 2019 19:20:14 GMT-0500 (Eastern Standard Time) - Personal Loan Account 1622 
+    (deposit transaction at Yundt, Schmidt and Ritchie using card ending with ***3336 for ANG 247.65 in account ***46495694): $445.16
+Sun Jan 26 2020 09:51:03 GMT-0500 (Eastern Standard Time) - Checking Account 8022 
+    (invoice transaction at Trantow - Dickens using card ending with ***8091 for ISK 687.58 in account ***76054349): $93.58
+Thu Oct 08 2020 06:44:41 GMT-0400 (Eastern Daylight Time) - Checking Account 4419 
+    (payment transaction at Marquardt - Stroman using card ending with ***1591 for XPF 617.39 in account ***70978303): $740.35
+Tue Aug 25 2020 09:18:35 GMT-0400 (Eastern Daylight Time) - Home Loan Account 5807 
+    (invoice transaction at Goldner - Upton using card ending with ***3219 for EGP 682.02 in account ***76712889): $884.49
+Wed Oct 14 2020 15:37:50 GMT-0400 (Eastern Daylight Time) - Credit Card Account 0768 
+    (withdrawal transaction at Harvey, Kuhic and Mante using card ending with ***3876 for XCD 156.36 in account ***27305634): $616.58
+Wed Jul 15 2020 17:15:57 GMT-0400 (Eastern Daylight Time) - Money Market Account 1402 
+    (deposit transaction at Lakin Inc using card ending with ***4153 for ERN 708.37 in account ***74029931): $65.26
+Tue Jan 14 2020 15:21:43 GMT-0500 (Eastern Standard Time) - Savings Account 0405 
+    (deposit transaction at Harber, Stanton and Ullrich using card ending with ***9548 for STN 580.82 in account ***34520771): $421.14
+Thu Jun 18 2020 14:48:14 GMT-0400 (Eastern Daylight Time) - Savings Account 1723 
+    (payment transaction at Considine LLC using card ending with ***5592 for BBD 965.56 in account ***56050386): $299.95
+Sun Oct 04 2020 23:59:34 GMT-0400 (Eastern Daylight Time) - Credit Card Account 9640 
+    (withdrawal transaction at Murray, Mante and Rohan using card ending with ***1942 for ILS 682.48 in account ***87894590): $977.31
+Mon Nov 25 2019 13:54:01 GMT-0500 (Eastern Standard Time) - Money Market Account 7586 
+    (payment transaction at Sipes LLC using card ending with ***7236 for DOP 288.81 in account ***88826106): $169.32
+Thu Apr 30 2020 20:41:05 GMT-0400 (Eastern Daylight Time) - Home Loan Account 1574 
+    (withdrawal transaction at Goodwin Inc using card ending with ***1218 for ANG 129.9 in account ***45062837): $926.1
+Fri Jun 12 2020 21:48:54 GMT-0400 (Eastern Daylight Time) - Home Loan Account 1395 
+    (invoice transaction at Waelchi and Sons using card ending with ***3912 for XPD 739.59 in account ***82222141): $279.8
+Mon Nov 18 2019 08:46:54 GMT-0500 (Eastern Standard Time) - Personal Loan Account 0283 
+    (withdrawal transaction at Waelchi Inc using card ending with ***0827 for DJF 54.32 in account ***81924952): $741.81
+Sun Mar 29 2020 21:09:02 GMT-0400 (Eastern Daylight Time) - Savings Account 5357 
+    (invoice transaction at Ullrich, Collier and Ledner using card ending with ***1775 for LTL 783.91 in account ***46769633): $819.53
+Fri Mar 20 2020 23:43:42 GMT-0400 (Eastern Daylight Time) - Savings Account 3373 
+    (withdrawal transaction at Kutch LLC using card ending with ***8863 for DKK 110.84 in account ***32423579): $643.18
+Sat Aug 01 2020 11:03:13 GMT-0400 (Eastern Daylight Time) - Home Loan Account 8637 
+    (deposit transaction at Wiza, Schoen and Mitchell using card ending with ***9212 for GHS 740.26 in account ***64339618): $355.43
