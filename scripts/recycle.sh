@@ -13,7 +13,7 @@ if [[ $container_id == "102" ]]; then
 fi
 
 # Kill old MITM
-pkill -xf "node /root/MITM/mitm/index.js HACS200_1F 10000 ${container_ip} ${container_id} true mitm_config.js"
+pkill -xf "node /root/MITM/mitm/index.js HACS200_1F 10000 $container_ip $container_id true mitm_config.js"
 pkill -xf "tail -n 0 -F /root/MITM_data/logins/${container_id}.txt"
 
 # Destroy old container
@@ -32,9 +32,9 @@ pct set $new_container_id --net0 name=eth0,bridge=vmbr0,ip=${new_container_ip}/1
 pct start $new_container_id
 pct unlock $new_container_id
 rm -f /run/lock/lxc/pve-config-${new_container_id}.lock
-pct mount new_$container_id
+pct mount $new_container_id
 
 # Start MITM
-node /root/MITM/mitm/index.js HACS200_1F 10000 ${new_container_ip} ${new_container_id} true mitm_config.js &
+node /root/MITM/mitm/index.js HACS200_1F 10000 $new_container_ip $new_container_id true mitm_config.js &
 # Goto monitor.sh
 tail -n 0 -F /root/MITM_data/logins/${new_container_id}.txt | ./monitor.sh $new_container_id &
