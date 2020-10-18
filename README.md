@@ -6,12 +6,13 @@
 * Password: `1fmatrix`
 
 ## Setting up the SDI From Scratch
-1. Setup neccesary files
+1. Setup necessary files
     1. `git clone https://github.com/JMS55/HACS2001FTheMatrixScripts`
     2. `chmod +x HACS2001FTheMatrixScripts/scripts/*`
     3. `cp HACS2001FTheMatrixScripts/scripts/* /root`
-    4. `cp HACS2001FTheMatrixScripts/configs/mitm_config.js /root/MITM/config`
-    5. `/root/MITM/install.sh`
+    4. `cp HACS2001FTheMatrixScripts/scripts/* /root`
+    5. `cp HACS2001FTheMatrixScripts/configs/mitm_config.js /root/MITM/config`
+    6. `/root/MITM/install.sh`
 1. Setup networking
     1. `ip addr add 128.8.37.122/255.255.0.0 dev enp4s1`
     2. `sysctl -w net.ipv4.ip_forward=1`
@@ -22,15 +23,22 @@
     7. `iptables --table nat --insert PREROUTING 1 --destination 128.8.37.122 --protocol tcp --destination-port 22 --jump DNAT --to-destination 172.20.0.1:10000`
 
 ## Creating Container Templates
-**TODO**: Add honey to both
 * Control:
     * `pct create 201 /var/lib/vz/template/cache/ubuntu-16.04-standard_16.04.5-1_amd64.tar.gz --storage local-lvm --net0 name=eth0,ip=172.20.0.2/16,bridge=vmbr0,gw=172.20.0.1`
+    * `pct start 201`
+    * `pct push 201 /root/honey.tar /root`
+    * `pct enter`
+    * `tar -xvf honey.tar && rm honey.tar`
+    * `exit`
+    * `pct stop 201`
     * `pct template 201`
 * Experimental (Snoopy)
     * `pct create 202 /var/lib/vz/template/cache/ubuntu-16.04-standard_16.04.5-1_amd64.tar.gz --storage local-lvm --net0 name=eth0,ip=172.20.0.2/16,bridge=vmbr0,gw=172.20.0.1`
     * **TODO**: Give container internet access
     * `pct start 202`
+    * `pct push 202 /root/honey.tar /root`
     * `pct enter`
+    * `tar -xvf honey.tar && rm honey.tar`
     * `wget -O snoopy-install.sh https://github.com/a2o/snoopy/raw/install/doc/install/bin/snoopy-install.sh && chmod 755 snoopy-install.sh && ./snoopy-install.sh stable`
     * `exit`
     * `pct stop 202`
