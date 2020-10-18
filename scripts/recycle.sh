@@ -24,7 +24,7 @@ pct destroy $container_id
 
 # Create new container
 pct unlock $template_id
-while ! pct clone $template_id $new_container_id --experimental false; do
+while ! pct clone $template_id $new_container_id; do
     sleep 30;
 done
 pct unlock $template_id

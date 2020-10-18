@@ -3,13 +3,13 @@
 ## Host VM Login
 * To SSH into the HostVM: `ssh root@jump.aces.umd.edu -p15831`
 * Username: `root`
-* Password: `2fmatrix`
+* Password: `1fmatrix`
 
 ## Setting up the SDI From Scratch
 1. Setup neccesary files
     1. `git clone https://github.com/JMS55/HACS2001FTheMatrixScripts`
-    2. `cp HACS2001FTheMatrixScripts/scripts/* /root`
-    3. `chmod +x /root/start.sh`
+    2. `chmod +x HACS2001FTheMatrixScripts/scripts/*`
+    3. `cp HACS2001FTheMatrixScripts/scripts/* /root`
     4. `cp HACS2001FTheMatrixScripts/configs/mitm_config.js /root`
     5. `/root/MITM/install.sh`
 1. Setup networking
