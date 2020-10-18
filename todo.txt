@@ -3,8 +3,5 @@ Jasmine:
 2. Script to upload MITM logs to cloud
 3. Upload health check to google sheets
 
-Gudrun:
-1. Setup SSH login after 3 tries (on container)
-
 Both:
 1. Make final container templates (honey + snoopy)
