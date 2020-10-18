@@ -10,7 +10,7 @@
     1. `git clone https://github.com/JMS55/HACS2001FTheMatrixScripts`
     2. `chmod +x HACS2001FTheMatrixScripts/scripts/*`
     3. `cp HACS2001FTheMatrixScripts/scripts/* /root`
-    4. `cp HACS2001FTheMatrixScripts/configs/mitm_config.js /root`
+    4. `cp HACS2001FTheMatrixScripts/configs/mitm_config.js /root/MITM/config`
     5. `/root/MITM/install.sh`
 1. Setup networking
     1. `ip addr add 128.8.37.122/255.255.0.0 dev enp4s1`

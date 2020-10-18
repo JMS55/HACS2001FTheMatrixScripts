@@ -42,6 +42,5 @@ module.exports = {
                 attempts: 3,
             }
         }
-
     }
 };
