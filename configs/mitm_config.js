@@ -29,7 +29,7 @@ module.exports = {
         banner: ''
     },
     autoAccess: {
-        enabled: false,
+        enabled: true,
         cacheSize: 5000,
         barrier: {
             normalDist: {
