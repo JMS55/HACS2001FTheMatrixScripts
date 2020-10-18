@@ -3,5 +3,8 @@ Jasmine:
 2. Script to upload MITM logs to cloud
 3. Upload health check to google sheets
 
-Both:
-1. Make final container templates (honey + snoopy)
+Other:
+1. Make final container templates
+    1. Command to add honey
+    2. Command to enable internet access temporarily
+    3. Give templates a proper name, since it shows up when SSH'ing in
