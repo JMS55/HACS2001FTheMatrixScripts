@@ -6,11 +6,20 @@
 * Password: `2fmatrix`
 
 ## Setting up the SDI From Scratch
-1. `git clone https://github.com/JMS55/HACS2001FTheMatrixScripts`
-2. `cp HACS2001FTheMatrixScripts/scripts/* /root`
-3. `cp HACS2001FTheMatrixScripts/configs/mitm_config.js /root`
-4. `./MITM/install.sh`
-5. Send attackers through MITM `iptables --table nat --insert PREROUTING 1 --destination 128.8.37.122 --protocol tcp --destination-port 22 --jump DNAT --to-destination 172.20.0.1:10000`
+1. Setup neccesary files
+    1. `git clone https://github.com/JMS55/HACS2001FTheMatrixScripts`
+    2. `cp HACS2001FTheMatrixScripts/scripts/* /root`
+    3. `chmod +x /root/start.sh`
+    4. `cp HACS2001FTheMatrixScripts/configs/mitm_config.js /root`
+    5. `./MITM/install.sh`
+1. Setup networking
+    1. `ip addr add 128.8.37.122/255.255.0.0 dev enp4s1`
+    2. `sysctl -w net.ipv4.ip_forward=1`
+    3. `iptables --table nat --append PREROUTING --source 0.0.0.0/0 --destination 128.8.37.122 --jump DNAT --to-destination 172.20.0.2`
+    4. `iptables --table nat --append PREROUTING --source 0.0.0.0/0 --destination 128.8.37.122 --jump DNAT --to-destination 172.20.0.3`
+    5. `iptables --table nat --append POSTROUTING --source 172.20.0.2 --destination 0.0.0.0/0 --jump SNAT --to-source 128.8.37.122`
+    6. `iptables --table nat --append POSTROUTING --source 172.20.0.3 --destination 0.0.0.0/0 --jump SNAT --to-source 128.8.37.122`
+    7. `iptables --table nat --insert PREROUTING 1 --destination 128.8.37.122 --protocol tcp --destination-port 22 --jump DNAT --to-destination 172.20.0.1:10000`
 
 ## Creating Container Templates
 **TODO**: Add honey to both

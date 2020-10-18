@@ -1,10 +1,10 @@
 Jasmine:
-1. Setup IP routing (public ip = 128.8.37.122)
-2. Test container scripts
-3. Script to upload MITM logs to cloud
+1. Test container scripts
+2. Script to upload MITM logs to cloud
 
 Gudrun:
 1. Setup SSH login after 3 tries
-2. Health check script
+2. Test health check script
 
+Both:
 1. Make final container templates (honey + snoopy)
