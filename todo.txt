@@ -4,6 +4,5 @@ Jasmine:
 3. Upload health check to google sheets
 
 Other:
-1. Make final container templates
-    1. Command to enable internet access temporarily
-    2. Give templates a proper name, since it shows up when SSH'ing in
+1. Figure out how to add internet access to the continer to setup snoopy
+2. Make sure snoopy is running and visible from the container
