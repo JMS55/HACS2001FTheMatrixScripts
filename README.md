@@ -44,7 +44,9 @@
     * `wget -O snoopy-install.sh https://github.com/a2o/snoopy/raw/install/doc/install/bin/snoopy-install.sh && chmod 755 snoopy-install.sh && ./snoopy-install.sh stable`
     * `exit`
     * `pct stop 202`
-    * **TODO**: Revoke container internet access
+    * Revoke container internet access
+        * `iptables --table nat --delete PREROUTING --in-interface enp4s2 --destination 172.30.133.255 --jump DNAT --to-destination 172.20.0.4`
+        * `iptables --table nat --delete POSTROUTING --out-interface enp4s2 --source 172.20.0.4 --jump SNAT --to-source 172.30.133.255`
     * `pct template 202`
 
 ## Starting Scripts

@@ -2,7 +2,4 @@ Jasmine:
 1. Test container scripts
 2. Script to upload MITM logs to cloud
 3. Upload health check to google sheets
-
-Other:
-1. Figure out how to add internet access to the continer to setup snoopy
-2. Make sure snoopy is running and visible from the container
+4. Submit username and password to deployment check
