@@ -7,12 +7,11 @@
 
 ## Setup Files
 1. `git clone https://github.com/JMS55/HACS2001FTheMatrixScripts`
-2. `chmod a+x HACS2001FTheMatrixScripts/scripts/*`
-3. `cp HACS2001FTheMatrixScripts/scripts/* /root`
-4. `cp HACS2001FTheMatrixScripts/honey/honey.tar /root`
+2. `cp HACS2001FTheMatrixScripts/scripts/* /root && chmod a+x /root/*.sh`
+3. `cp HACS2001FTheMatrixScripts/honey/honey.tar /root`
+4. `cp HACS2001FTheMatrixScripts/configs/rc.local /etc && chmod a+x /etc/rc.local`
 5. `cp HACS2001FTheMatrixScripts/configs/mitm_config.js /root/MITM/config`
-6. `cp HACS2001FTheMatrixScripts/configs/rc.local /etc && chmod a+x /etc/rc.local`
-7. `/root/MITM/install.sh`
+6. `/root/MITM/install.sh`
 
 ## Finishing
 Reboot to finish
