@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+/root/setup_networking.sh &
+/root/health_logs.sh &
+/root/recycle.sh 101 > /root/log.txt 2>&1 &

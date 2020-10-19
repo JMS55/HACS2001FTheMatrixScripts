@@ -1,4 +1,3 @@
 Jasmine:
-1. Script to upload nohup.out to cloud
+1. Script to upload log.txt to cloud
 2. Script to upload health checks to google sheets
-3. Prevent iptables rules from flushing on restart
