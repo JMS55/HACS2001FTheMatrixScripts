@@ -3,8 +3,8 @@
 container_id=$1
 attacker_ip=$2
 
-# Wait 45m for the attacker to do things
-sleep 45m
+# Wait 15m for the attacker to do things
+sleep 15m
 
 # Remove firewall rules set by monitor.sh
 iptables --table filter --delete INPUT --protocol tcp --source $attacker_ip --destination 172.20.0.1 --destination-port 10000 --jump ACCEPT
