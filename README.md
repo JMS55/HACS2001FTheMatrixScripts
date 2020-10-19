@@ -34,7 +34,9 @@
     * `pct template 201`
 * Experimental (Snoopy)
     * `pct create 202 /var/lib/vz/template/cache/ubuntu-16.04-standard_16.04.5-1_amd64.tar.gz --storage local-lvm --net0 name=eth0,ip=172.20.0.2/16,bridge=vmbr0,gw=172.20.0.1 -hostname backup`
-    * **TODO**: Give container internet access
+    * Give container internet access
+        * `iptables --table nat --append PREROUTING --in-interface enp4s2 --destination 172.30.133.255 --jump DNAT --to-destination 172.20.0.4`
+        * `iptables --table nat --append POSTROUTING --out-interface enp4s2 --source 172.20.0.4 --jump SNAT --to-source 172.30.133.255`
     * `pct start 202`
     * `pct push 202 /root/honey.tar /root`
     * `pct enter`
