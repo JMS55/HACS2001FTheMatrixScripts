@@ -37,4 +37,4 @@ pct mount $new_container_id
 # Start MITM
 node /root/MITM/mitm/index.js HACS200_1F 10000 $new_container_ip $new_container_id true mitm_config.js &
 # Goto monitor.sh
-tail -n 0 -F /root/MITM_data/logins/${new_container_id}.txt | ./monitor.sh $new_container_id &
+tail -n 0 -F /root/MITM_data/logins/${new_container_id}.txt | /root/monitor.sh $new_container_id &

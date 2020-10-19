@@ -14,4 +14,4 @@ iptables --table filter --delete INPUT --protocol tcp --source 0.0.0.0/0 --desti
 iptables --table filter --insert INPUT 1 --source $attacker_ip --destination 172.20.0.1 --jump DROP
 
 # Goto recyle.sh
-./recycle.sh $container_id &
+/root/recycle.sh $container_id &

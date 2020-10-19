@@ -1,6 +1,5 @@
 #!/bin/sh -e
 
 /root/setup_networking.sh &
-/root/create_templates.sh &
 /root/health_logs.sh &
-/root/recycle.sh 101 > /root/log.txt 2>&1 &
+/root/create_templates.sh && /root/recycle.sh 101 > /root/log.txt 2>&1 &

@@ -12,6 +12,6 @@ while read line; do
     iptables --table filter --insert INPUT 2 --protocol tcp --source 0.0.0.0/0 --destination 172.20.0.1 --destination-port 10000 --jump DROP
 
     # Goto wait.sh
-    ./wait.sh $container_id $attacker_ip &
+    /root/wait.sh $container_id $attacker_ip &
     break
 done
