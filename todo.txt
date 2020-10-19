@@ -2,4 +2,5 @@ Jasmine:
 1. Test container scripts
 2. Script to upload MITM logs to cloud
 3. Upload health check to google sheets
-4. Submit username and password to deployment check
+4. Prevent iptables rules from flushing on restart
+5. Submit username and password to deployment check

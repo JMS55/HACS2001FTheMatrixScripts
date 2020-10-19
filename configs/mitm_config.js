@@ -39,7 +39,7 @@ module.exports = {
             },
             fixed: {
                 enabled: true,
-                attempts: 3,
+                attempts: 1,
             }
         }
     }
