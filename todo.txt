@@ -1,3 +1,2 @@
-Jasmine:
-1. Script to upload log.txt to cloud
-2. Script to upload health checks to google sheets
+Rework health_logs.sh into upload.sh
+    Combine upload log.txt + health check
