@@ -1,4 +1,6 @@
 ip addr add 128.8.37.122/255.255.0.0 dev enp4s1
+ip addr add 128.8.37.116/255.255.0.0 dev enp4s1
+ip addr add 128.8.238.124/255.255.0.0 dev enp4s1
 
 sysctl -w net.ipv4.ip_forward=1
 
