@@ -3,5 +3,5 @@
 /root/setup_networking.sh &
 /root/health_logs.sh &
 /root/create_templates.sh &
-sleep 20
+sleep 2m
 /root/recycle.sh 101 > /root/log.txt 2>&1 &
