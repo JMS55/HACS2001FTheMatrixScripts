@@ -3,6 +3,6 @@
 /root/setup_networking.sh &
 /root/create_templates.sh &
 sleep 1m
-/root/recycle.sh 101 201 172.20.0.2 10000 > /root/log1.txt 2>&1 &
-/root/recycle.sh 102 201 172.20.0.3 10001 > /root/log2.txt 2>&1 &
-/root/recycle.sh 103 201 172.20.0.4 10002 > /root/log3.txt 2>&1 &
+/root/recycle.sh 101 201 172.20.0.2 10000 > /root/log101.txt 2>&1 &
+/root/recycle.sh 102 201 172.20.0.3 10001 > /root/log102.txt 2>&1 &
+/root/recycle.sh 103 201 172.20.0.4 10002 > /root/log103.txt 2>&1 &
