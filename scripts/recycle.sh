@@ -3,6 +3,7 @@
 container_id=$1
 container_ip=""
 template_id=$2
+mitm_port=$3
 
 if [[ $container_id == "101" ]]; then
     container_ip="172.0.0.2"
@@ -19,7 +20,7 @@ else
 fi
 
 # Kill old MITM
-pkill -xf "node /root/MITM/mitm/index.js HACS200_1F 10000 $container_ip $container_id true mitm_config.js"
+pkill -xf "node /root/MITM/mitm/index.js HACS200_1F $mitm_port $container_ip $container_id true mitm_config.js"
 pkill -xf "tail -n 0 -F /root/MITM_data/logins/${container_id}.txt"
 
 # Destroy old container
@@ -41,6 +42,6 @@ rm -f /run/lock/lxc/pve-config-${container_id}.lock
 pct mount $container_id
 
 # Start MITM
-node /root/MITM/mitm/index.js HACS200_1F 10000 $container_ip $container_id true mitm_config.js &
+node /root/MITM/mitm/index.js HACS200_1F $mitm_port $container_ip $container_id true mitm_config.js &
 # Goto monitor.sh
-tail -n 0 -F /root/MITM_data/logins/${container_id}.txt | /root/monitor.sh $container_id $template_id &
+tail -n 0 -F /root/MITM_data/logins/${container_id}.txt | /root/monitor.sh $container_id $template_id $mitm_port &
