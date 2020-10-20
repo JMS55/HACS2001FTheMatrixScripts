@@ -1,17 +1,9 @@
 #!/bin/bash
 
 container_id=$1
-container_ip=""
 template_id=$2
-mitm_port=$3
-
-if [[ $container_id == "101" ]]; then
-    container_ip="172.0.0.2"
-elif [[ $container_id == "102" ]]; then
-    container_ip="172.0.0.3"
-elif [[ $container_id == "103" ]]; then
-    container_ip="172.0.0.4"
-fi
+container_ip=$3
+mitm_port=$4
 
 if [[ $template_id == "202" ]]; then
     template_id="201"
@@ -44,4 +36,4 @@ pct mount $container_id
 # Start MITM
 node /root/MITM/mitm/index.js HACS200_1F $mitm_port $container_ip $container_id true mitm_config.js &
 # Goto monitor.sh
-tail -n 0 -F /root/MITM_data/logins/${container_id}.txt | /root/monitor.sh $container_id $template_id $mitm_port &
+tail -n 0 -F /root/MITM_data/logins/${container_id}.txt | /root/monitor.sh $container_id $template_id $container_ip $mitm_port &

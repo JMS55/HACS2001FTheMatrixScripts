@@ -2,7 +2,8 @@
 
 container_id=$1
 template_id=$2
-mitm_port=$3
+container_ip=$3
+mitm_port=$4
 
 # Reads lines of MITM logs from STDIN
 while read line; do
@@ -14,6 +15,6 @@ while read line; do
     iptables --table filter --insert INPUT 2 --protocol tcp --source 0.0.0.0/0 --destination 172.20.0.1 --destination-port $mitm_port --jump DROP
 
     # Goto wait.sh
-    /root/wait.sh $container_id $template_id $mitm_port $attacker_ip &
+    /root/wait.sh $container_id $template_id $container_ip $mitm_port $attacker_ip &
     break
 done
