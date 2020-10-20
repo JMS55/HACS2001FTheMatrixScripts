@@ -5,6 +5,7 @@ pct create 201 /var/lib/vz/template/cache/ubuntu-16.04-standard_16.04.5-1_amd64.
 pct start 201
 pct push 201 /root/honey.tar /home/honey.tar
 pct exec 201 -- cd /home && tar -xvf honey.tar && rm honey.tar && cp -R honey/* . && rm -rf honey
+pct exec 201 echo -e "123" | passwd root
 pct stop 201
 pct template 201
 
@@ -17,6 +18,7 @@ iptables --table nat --insert POSTROUTING 1 --source 172.20.0.3 --jump SNAT --to
 pct start 202
 pct push 202 /root/honey.tar /home/honey.tar
 pct exec 202 -- cd /home && tar -xvf honey.tar && rm honey.tar && cp -R honey/* . && rm -rf honey
+pct exec 202 echo -e "123" | passwd root
 pct exec 202 -- apt update
 pct exec 202 -- wget -O snoopy-install.sh https://github.com/a2o/snoopy/raw/install/doc/install/bin/snoopy-install.sh && chmod 755 snoopy-install.sh && ./snoopy-install.sh stable
 pct stop 202
