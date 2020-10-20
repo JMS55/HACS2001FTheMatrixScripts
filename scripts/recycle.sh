@@ -6,9 +6,9 @@ template_id=$2
 
 if [[ $container_id == "101" ]]; then
     container_ip="172.0.0.2"
-if [[ $container_id == "102" ]]; then
+else if [[ $container_id == "102" ]]; then
     container_ip="172.0.0.3"
-if [[ $container_id == "103" ]]; then
+else if [[ $container_id == "103" ]]; then
     container_ip="172.0.0.4"
 fi
 
