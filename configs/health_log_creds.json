@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hacs200-health-logs-293120",
+  "private_key_id": "010fe18e6c1b207fc9d3260418191d3cf4e35ca6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQChOEX9YSN+57bU\nxjsuZQvUm4bJLTphaGDPXVn3iCESVU7vO79FFtO99kmE6DxoBEvZxQFOIc2EO0s/\nR7GfTd7CtLnH/38dRGXhpa4JEgr5+uPE4OpxbyH7pPkP66yH0aa+6yf8SdwuIJYF\nsdiuSf3lhS3D9Jf2owcny5nMbppNt2cQXsTpeBQ2bmzspYk5wI1I8BvR+nxRSPB2\nJMXyRH82/PJgwTx2jMXiR7Wx7/D6g+JNIl8ePypzwZvIHFg8lIdr2E24/9zmlLGS\nQqt4qLx9BtwzRh13r1Wyp0enSjkw82YkqLmKO0Pw0A1hCRuu9+2/weq6rBhuVYF0\niKcv9yNZAgMBAAECggEAAMlcMIfXCev1ecI2mEUOWDoQQyVBxZZ7eJdQ/4GLJN48\nAsGDzxWv7tFL4U4gkqLKkn+m1HwvMe7WQbFTek5/11cEZjUWsKuYQ+RI5ANEbI+M\n6WtglC2xNiq62dklSng3D+YQ2a9opRN30jmlka2J4eZmUKLjCciVPvPs6pwBFfh1\n+7IlaUMnt4JOu/84Z5LlxDaZd1xXbApELowd+4gNU5/gkL+19BZrix4yPFzCY37Z\nlggwj4IqzVN7+GK+BuakV4vQqlhVslGVZSkSeTUR8HOn0iIWctMByoHttKN5fI36\nVJMsVWBBoJJ9Gdqvef2QdzexuYIuGMZjAyriolgF0QKBgQDeqLMV0s0IqzLL0hTG\n4+ydHdxFKykno6h3DKHL2yeIdi7LkseoLoU+24us96GUTPzpmgmxsSI+bK5Ym2ZW\nhWRHeVKfUqqj56Qt9vH8V8YvpO+jcvF9IkikKf0CRjamnj74FXQOr3NByHFBwnWA\nP69nIsOF43eyBll89H7rAeV5qQKBgQC5XGUdijEh53dgk6wo7J918IRI9vDl9+jO\nrqYiQvPCmKxUlSEjd9D1NIxFTEI0QIh93S2Olcd2gzAUemMttxhqUKakyPLc9QtX\n7dl/SEVsN1wTGGv4Gcn3DpIMq2Ws1X36cLZwgV0wSNHCcBARlAGiuIer2IzoZidu\n3PEW+uBKMQKBgQCr1GTgIp44YmYBBU8jbiHb3n9uobBQ9uu7c/Qo7ifEF/BlChEq\nqTwLFkLkaPY5DHDhlg6FIr3ajuS9XK/NdYO95NLuQU2Oz+TT1A9LPjGj8xU8fif+\n+cY1anHmn2jtjJHrwiKecqfvzFAa/4bOQleKsDlTygdFS8EjvUt08TG2gQKBgAva\ng8Da2H+BjNnJN8Y6M4xYQC1mVUtvihzFgGxKecok90hFbSQWgm9b1+iKkuVChzf9\nT++BVosWopl8piEDR3VtCOsayqUkqoAJ/tGr7nyYIbQ66JSqGYdKED7tKwhdcrv0\nP0Z8j1gKIBfeELj/DQe54zszEve9qKHnUSeWDYfRAoGBAJg88dO+m6HyS06kH/Kf\nNYXHW+CVtVz5BYvz2i35Fm/ilrrPMuAIMm88J+AO95t7NHjVFxV4zn+piOTs/z0W\n4mF5Ajm1wk9+c59+xCheCW+uCbr/tP/L7GaMZfiQASHhI0LRF7H3PQl2VxSK12VM\nq6TKokgAK1ExWuKzkVKNYLwA\n-----END PRIVATE KEY-----\n",
+  "client_email": "id-fhealth@hacs200-health-logs-293120.iam.gserviceaccount.com",
+  "client_id": "105426994159642807989",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/id-fhealth%40hacs200-health-logs-293120.iam.gserviceaccount.com"
+}
