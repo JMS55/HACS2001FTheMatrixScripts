@@ -7,9 +7,9 @@ mitm_port=$3
 
 if [[ $container_id == "101" ]]; then
     container_ip="172.0.0.2"
-else if [[ $container_id == "102" ]]; then
+elif [[ $container_id == "102" ]]; then
     container_ip="172.0.0.3"
-else if [[ $container_id == "103" ]]; then
+elif [[ $container_id == "103" ]]; then
     container_ip="172.0.0.4"
 fi
 
