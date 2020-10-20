@@ -3,14 +3,15 @@
 container_id=$1
 container_ip=""
 template_id=$2
+
 if [[ $container_id == "101" ]]; then
     container_ip="172.0.0.2"
 if [[ $container_id == "102" ]]; then
     container_ip="172.0.0.3"
-fi
 if [[ $container_id == "103" ]]; then
     container_ip="172.0.0.4"
 fi
+
 if [[ $template_id == "202" ]]; then
     template_id="201"
 else
