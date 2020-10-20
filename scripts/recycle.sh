@@ -32,7 +32,7 @@ pct destroy $container_id
 # Create new container
 pct unlock $template_id
 while ! pct clone $template_id $container_id; do
-    sleep 30;
+    sleep 10;
 done
 pct unlock $template_id
 pct set $container_id --net0 name=eth0,bridge=vmbr0,ip=${container_ip}/16,gw=172.20.0.1
