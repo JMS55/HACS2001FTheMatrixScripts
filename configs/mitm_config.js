@@ -34,7 +34,7 @@ module.exports = {
         barrier: {
             normalDist: {
                 enabled: false,
-                mean: 6,
+                mean: 1,
                 standardDeviation: 1,
             },
             fixed: {
