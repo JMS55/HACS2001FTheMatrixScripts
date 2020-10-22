@@ -11,7 +11,7 @@ else
     template_id="202"
 fi
 
-echo "Using template: ${template_id}\n" >> /root/log${container_id}.txt
+echo "Using template: ${template_id}"
 
 # Kill old MITM
 pkill -xf "node /root/MITM/mitm/index.js HACS200_1F $mitm_port $container_ip $container_id true mitm_config.js"
