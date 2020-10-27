@@ -50,7 +50,7 @@ def get_container_info(container):
     return [cont_RAM, cont_disk, cont_load, "", ""]
 
 scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
-creds = ServiceAccountCredentials.from_json_keyfile_name('../configs/health_log_creds.json', scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name('/root/HACS2001FTheMatrixScripts/configs/health_log_creds.json', scope)
 client = gspread.authorize(creds)
 
 sheet = client.open("Health Logs").get_worksheet(0)
@@ -58,3 +58,4 @@ sheet = client.open("Health Logs").get_worksheet(0)
 row = get_host_info() + get_container_info("101") + get_container_info("101") + get_container_info("103")
 index = sheet.row_count
 sheet.insert_row(row, index)
+
