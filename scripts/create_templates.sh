@@ -13,7 +13,11 @@ pct start 201
 pct push 201 /root/honey.tar /home/honey.tar
 pct push 201 /root/sshd_config /etc/ssh/sshd_config
 pct exec 201 service ssh restart
-pct exec 201 -- tar -xvf /home/honey.tar && rm /home/honey.tar && cp -R /home/honey/* . && rm -rf /home/honey
+pct exec 201 -- tar -xvf /home/honey.tar
+pct exec 201 -- rm /home/honey.tar
+pct exec 201 -- cp -R honey/*
+pct exec 201 -- rm -rf honey
+
 pct stop 201
 pct template 201
 
@@ -25,9 +29,14 @@ pct start 202
 pct push 202 /root/honey.tar /home/honey.tar
 pct push 202 /root/sshd_config /etc/ssh/sshd_config
 pct exec 202 service ssh restart
-pct exec 202 -- tar -xvf /home/honey.tar && rm /home/honey.tar && cp -R /home/honey/* . && rm -rf /home/honey
+pct exec 202 -- tar -xvf /home/honey.tar
+pct exec 202 -- rm /home/honey.tar
+pct exec 202 -- cp -R honey/*
+pct exec 202 -- rm -rf honey
 pct exec 202 -- apt update
-pct exec 202 -- wget -O snoopy-install.sh https://github.com/a2o/snoopy/raw/install/doc/install/bin/snoopy-install.sh && chmod 755 snoopy-install.sh && ./snoopy-install.sh stable
+pct exec 202 -- wget -O snoopy-install.sh https://github.com/a2o/snoopy/raw/install/doc/install/bin/snoopy-install.sh
+pct exec 202 -- chmod 755 snoopy-install.sh
+pct exec 202 -- snoopy-install.sh stable
 pct stop 202
 iptables --table nat --delete PREROUTING --destination 172.30.133.255 --jump DNAT --to-destination 172.20.0.3
 iptables --table nat --delete POSTROUTING --source 172.20.0.3 --jump SNAT --to-source 172.30.133.255
