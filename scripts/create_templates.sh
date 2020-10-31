@@ -15,7 +15,7 @@ pct push 201 /root/sshd_config /etc/ssh/sshd_config
 pct exec 201 service ssh restart
 pct exec 201 -- tar -xvf honey.tar
 pct exec 201 -- rm honey.tar
-pct exec 201 -- cp r-r honey/. /home
+pct exec 201 -- cp -r honey/. /home
 pct exec 201 -- rm -rf honey
 
 pct stop 201
@@ -31,7 +31,7 @@ pct push 202 /root/sshd_config /etc/ssh/sshd_config
 pct exec 202 service ssh restart
 pct exec 202 -- tar -xvf honey.tar
 pct exec 202 -- rm honey.tar
-pct exec 202 -- cp r-r honey/. /home
+pct exec 202 -- cp -r honey/. /home
 pct exec 202 -- rm -rf honey
 pct exec 202 -- apt update
 pct exec 202 -- wget -O snoopy-install.sh https://github.com/a2o/snoopy/raw/install/doc/install/bin/snoopy-install.sh
