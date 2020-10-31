@@ -13,8 +13,7 @@ pct start 201
 pct push 201 /root/honey.tar /home/honey.tar
 pct push 201 /root/sshd_config /etc/ssh/sshd_config
 pct exec 201 service ssh restart
-pct exec 201 -- cd /home && tar -xvf honey.tar && rm honey.tar && cp -R honey/* . && rm -rf honey
-pct exec 201 echo -e "123" | passwd root
+pct exec 201 -- tar -xvf /home/honey.tar && rm /home/honey.tar && cp -R /home/honey/* . && rm -rf /home/honey
 pct stop 201
 pct template 201
 
@@ -26,8 +25,7 @@ pct start 202
 pct push 202 /root/honey.tar /home/honey.tar
 pct push 202 /root/sshd_config /etc/ssh/sshd_config
 pct exec 202 service ssh restart
-pct exec 202 -- cd /home && tar -xvf honey.tar && rm honey.tar && cp -R honey/* . && rm -rf honey
-pct exec 202 echo -e "123" | passwd root
+pct exec 202 -- tar -xvf /home/honey.tar && rm /home/honey.tar && cp -R /home/honey/* . && rm -rf /home/honey
 pct exec 202 -- apt update
 pct exec 202 -- wget -O snoopy-install.sh https://github.com/a2o/snoopy/raw/install/doc/install/bin/snoopy-install.sh && chmod 755 snoopy-install.sh && ./snoopy-install.sh stable
 pct stop 202
