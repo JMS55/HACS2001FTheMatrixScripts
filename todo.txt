@@ -1,2 +1,0 @@
-Rework health_logs.sh into upload.sh
-    Combine upload log.txt + health check
