@@ -14,5 +14,8 @@
 6. `cp HACS2001FTheMatrixScripts/configs/mitm_config.js /root/MITM/config`
 7. `/root/MITM/install.sh`
 
+## Health Logs
+* Add healthLogs to `/etc/cron.hourly`
+
 ## Finishing
 Reboot to finish
