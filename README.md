@@ -17,3 +17,8 @@
 
 ## Finishing
 Reboot to finish
+
+## Restarting Scripts When MITM Breaks
+1. `ps aux | grep .sh`, note down the process ID's of monitor.sh (I wouldn't kill the others, just to be safe)
+2. `kill -9 <process id>` for each process
+3. Look at rc.local, and do `nohup <command>` for each of the commands about starting each container
