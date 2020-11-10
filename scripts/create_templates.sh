@@ -7,6 +7,9 @@ pct destroy 102
 pct unmount 103
 pct destroy 103
 
+pct unmount 104
+pct destroy 104
+
 pct destroy 201
 pct create 201 /var/lib/vz/template/cache/ubuntu-16.04-standard_16.04.5-1_amd64.tar.gz --storage local-lvm --net0 name=eth0,ip=172.20.0.2/16,bridge=vmbr0,gw=172.20.0.1 -hostname backup
 pct start 201
