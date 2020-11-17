@@ -6,8 +6,8 @@ container_ip=$3
 mitm_port=$4
 attacker_ip=$5
 
-# Wait 15m for the attacker to do things
-sleep 15m
+# Wait 5m for the attacker to do things
+sleep 5m
 
 # Remove firewall rules set by monitor.sh
 iptables --table filter --delete INPUT --protocol tcp --source $attacker_ip --destination 172.20.0.1 --destination-port $mitm_port --jump ACCEPT
