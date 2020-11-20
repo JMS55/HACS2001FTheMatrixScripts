@@ -36,6 +36,8 @@ rm -f /run/lock/lxc/pve-config-${container_id}.lock
 pct mount $container_id
 
 # Start MITM
+wait 1m
 node /root/MITM/mitm/index.js HACS200_1F $mitm_port $container_ip $container_id true mitm_config.js &
+wait 1m
 # Goto monitor.sh
 tail -n 0 -F /root/MITM_data/logins/${container_id}.txt | /root/monitor.sh $container_id $template_id $container_ip $mitm_port &
