@@ -5,6 +5,9 @@ template_id=$2
 container_ip=$3
 mitm_port=$4
 
+# Remove firewall rule blocking anyone from interacting with the container (set by monitor.sh)
+iptables --table filter --delete INPUT --protocol tcp --source 0.0.0.0/0 --destination 172.20.0.1 --destination-port $mitm_port --jump DROP
+
 # Reads lines of MITM logs from STDIN
 while read line; do
     attacker_ip=$(echo $line | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}')
