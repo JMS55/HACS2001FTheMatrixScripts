@@ -8,7 +8,6 @@ class Attack:
         self.ip = ''
         self.success = False
         self.noninteractiveCommand = ''
-        self.shell = False
 
 def getAttacks(logFile):
     # Parses the log10_.txt file
@@ -20,8 +19,9 @@ def getAttacks(logFile):
         if (line.find('Using template') != -1):
             temp = re.match(r'Using [T|t]emplate: (\d{3})', line)
             if temp != None:
-                inAttack = False
-                attacks.append(copy.copy(attack))
+                if inAttack:
+                    inAttack = False
+                    attacks.append(copy.copy(attack))
                 attack = Attack()
                 attack.template = temp.groups()[0]
         elif (line.find ('Attacker connected') != -1 and inAttack == False):
@@ -40,7 +40,7 @@ def getAttacks(logFile):
             if command != None:
                 attack.noninteractiveCommand = command
         elif (line.find("SHELL") != -1):
-            attack.shell = True
+            inAttack = False
         if inAttack:
             attack.data += line + '\n'
     return attacks
@@ -49,5 +49,5 @@ def printData(attacks):
     for attack in attacks:
         print(attack.data)
 
-attacksTest = getAttacks('./testFile.txt')
+attacksTest = getAttacks('./logs-11-10/log101.txt')
 printData(attacksTest)
