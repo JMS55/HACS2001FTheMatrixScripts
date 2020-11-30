@@ -9,6 +9,7 @@ class Attack:
         self.success = False
         self.noninteractiveCommand = ''
 
+# Returns an array of attack objects
 def getAttacks(logFile):
     # Parses the log10_.txt file
     file = open(logFile)
@@ -19,7 +20,7 @@ def getAttacks(logFile):
         if (line.find('Using template') != -1):
             temp = re.match(r'Using [T|t]emplate: (\d{3})', line)
             if temp != None:
-                if inAttack:
+                if inAttack and attack.success:
                     inAttack = False
                     attacks.append(copy.copy(attack))
                 attack = Attack()
@@ -41,13 +42,34 @@ def getAttacks(logFile):
                 attack.noninteractiveCommand = command
         elif (line.find("SHELL") != -1):
             inAttack = False
+            attack.success = False
         if inAttack:
             attack.data += line + '\n'
     return attacks
+
+# Returns an array of Attack Objects
+def getAllAttacks(directory):
+    attacks101 = getAttacks(directory+'/log101.txt')
+    attacks102 = getAttacks(directory+'/log102.txt')
+    attacks103 = getAttacks(directory+'/log103.txt')
+    attacks104 = getAttacks(directory+'/log103.txt')
+    return attacks101 + attacks102 + attacks103 + attacks104
+
+#Use this method to collect data about attacks separated by template
+def attacksByTemplate():
+    attacks = getAllAttacks('./logs-11-10')
+    for attack in attacks:
+        if attack.template == "201":
+            # call method that collects data about attack, print is placeholder
+            print(attack.ip)
+        elif attack.template == "202":
+            # call method that collects data about attack, print is placeholder
+            print(attack.ip)
+
 
 def printData(attacks):
     for attack in attacks:
         print(attack.data)
 
-attacksTest = getAttacks('./logs-11-10/log101.txt')
+attacksTest = getAllAttacks('./directory')
 printData(attacksTest)
