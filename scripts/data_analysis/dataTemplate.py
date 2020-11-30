@@ -29,7 +29,7 @@ def getAttacks(logFile):
             if ip != None:
                 attack.ip = ip.groups()[0]
                 inAttack = True
-        elif (line.find("Compromising the honeypot") != -1):
+        elif (line.find("Attacker authenticated and is inside container") != -1):
             attack.success = True
         elif (line.find("Attacker closed the connection") != -1 and attack.success == False):
             attack.ip = ''
