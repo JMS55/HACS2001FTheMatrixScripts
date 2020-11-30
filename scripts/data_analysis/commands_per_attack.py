@@ -20,7 +20,7 @@ for file in files:
                         if "line from reader" in lines[i] or "Noninteractive mode attacker command" in lines[i]:
                             attack_commands += 1
 
-                    # Create a mapping of {commands_per_attack: frequency }
+                    # Create a mapping of { commands_per_attack: frequency }
                     if attack_commands in result:
                         result[attack_commands] += 1
                     else:
