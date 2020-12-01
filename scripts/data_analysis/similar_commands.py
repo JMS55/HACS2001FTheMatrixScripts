@@ -5,7 +5,8 @@ import pprint
 reg = re.compile(r'\n|\|\||;')
 pp = pprint.PrettyPrinter()
 
-results = {}
+results_control = {}
+results_experimental = {}
 
 attacks = parser.getAllAttacks(".")
 for attack in attacks:
@@ -14,9 +15,19 @@ for attack in attacks:
         commands.remove("")
 
     for command in commands:
-        if command in results:
-            results[command] += 1
+        if attack.template == "201":
+            if command in results_control:
+                results_control[command] += 1
+            else:
+                results_control[command] = 1
         else:
-            results[command] = 1
+            if command in results_experimental:
+                results_experimental[command] += 1
+            else:
+                results_experimental[command] = 1
 
-pp.pprint(results)
+pp.pprint("Control Results:")
+pp.pprint(results_control)
+print()
+pp.pprint("Experimental Results:")
+pp.pprint(results_experimental)

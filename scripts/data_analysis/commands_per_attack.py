@@ -3,7 +3,8 @@ import re
 
 reg = re.compile(r'\n|\|\||;')
 
-results = {}
+results_control = {}
+results_experimental = {}
 
 attacks = parser.getAllAttacks(".")
 for attack in attacks:
@@ -12,9 +13,19 @@ for attack in attacks:
         commands.remove("")
     commands = len(commands)
 
-    if commands in results:
-        results[commands] += 1
+    if attack.template == "201":
+        if commands in results_control:
+            results_control[commands] += 1
+        else:
+            results_control[commands] = 1
     else:
-        results[commands] = 1
+        if commands in results_experimental:
+            results_experimental[commands] += 1
+        else:
+            results_experimental[commands] = 1
 
-print(results)
+print("Control Results:")
+print(results_control)
+print()
+print("Experimental Results:")
+print(results_experimental)
