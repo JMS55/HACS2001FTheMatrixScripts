@@ -56,7 +56,7 @@ def getAllAttacks(directory):
     attacks101 = getAttacks(directory+'/log101.txt')
     attacks102 = getAttacks(directory+'/log102.txt')
     attacks103 = getAttacks(directory+'/log103.txt')
-    attacks103 = getAttacks(directory+'/log104.txt')
+    attacks104 = getAttacks(directory+'/log104.txt')
     return attacks101 + attacks102 + attacks103 + attacks104
 
 #Use this method to collect data about attacks separated by template
