@@ -21,7 +21,7 @@ for Attack in attacks:
 		if "Attacker closed connection" in line:
 			end_time = line.split()[0] + " " + (line.split()[1]).split(".")[0]
 				
-	if start_time != "" && end_time != "":
+	if start_time != "" and end_time != "":
 		end = datetime.strptime(end_time, date_format)
 		start = datetime.strptime(start_time, date_format)
 		out.write((end - start).seconds)
