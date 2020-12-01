@@ -1,6 +1,10 @@
 import re
 import copy
 
+template_re = re.compile(r'Using [T|t]emplate: (\d{3})')
+ip_re = re.compile(r'Attacker connected: (\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})')
+command_re = re.compile(r'Noninteractive mode attacker command: (.*)$')
+
 class Attack:
     def __init__(self):
         self.template = None
@@ -18,7 +22,7 @@ def getAttacks(logFile):
     inAttack = False
     for line in file:
         if (line.find('Using template') != -1):
-            temp = re.match(r'Using [T|t]emplate: (\d{3})', line)
+            temp = template_re.match(line)
             if temp != None:
                 if inAttack and attack.success:
                     inAttack = False
@@ -26,7 +30,7 @@ def getAttacks(logFile):
                 attack = Attack()
                 attack.template = temp.groups()[0]
         elif (line.find ('Attacker connected') != -1 and inAttack == False):
-            ip = re.search(r'Attacker connected: (\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})',line)
+            ip = ip_re.search(line)
             if ip != None:
                 attack.ip = ip.groups()[0]
                 inAttack = True
@@ -37,9 +41,9 @@ def getAttacks(logFile):
             attack.data = ''
             inAttack = False
         elif (line.find("Noninteractive mode") != -1):
-            command = re.search(r'Noninteractive mode attacker command: (.*)$',line)
+            command = command_re.search(line)
             if command != None:
-                attack.noninteractiveCommand = command
+                attack.noninteractiveCommand = command.group(1)
         elif (line.find("SHELL") != -1):
             inAttack = False
             attack.success = False
@@ -52,7 +56,7 @@ def getAllAttacks(directory):
     attacks101 = getAttacks(directory+'/log101.txt')
     attacks102 = getAttacks(directory+'/log102.txt')
     attacks103 = getAttacks(directory+'/log103.txt')
-    attacks104 = getAttacks(directory+'/log103.txt')
+    attacks103 = getAttacks(directory+'/log104.txt')
     return attacks101 + attacks102 + attacks103 + attacks104
 
 #Use this method to collect data about attacks separated by template
@@ -71,5 +75,7 @@ def printData(attacks):
     for attack in attacks:
         print(attack.data)
 
-attacksTest = getAllAttacks('./directory')
-printData(attacksTest)
+
+if __name__ == "__main__":
+    attacksTest = getAllAttacks('./directory')
+    printData(attacksTest)

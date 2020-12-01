@@ -1,26 +1,22 @@
+import parser
 import re
+import pprint
 
-file1 = open("log101.txt", "r")
-file2 = open("log102.txt", "r")
-file3 = open("log103.txt", "r")
-file4 = open("log104.txt", "r")
-files = [file1, file2, file3]
+reg = re.compile(r'\n|\|\||;')
+pp = pprint.PrettyPrinter()
 
-for file in files:
-    lines = file.readlines()
-    # Find starting line of attack
-    for start in range(len(lines)):
-        if "Attacker authenticated and is inside container" in lines[start]:
-            # Find ending line of attack
-            for end in range(start + 1, len(lines)):
-                if "Container's OpenSSH server closed connection" in lines[end]:
-                    # TODO: Group commands by similarity
-                    for i in range(start, end + 1):
-                        if "line from reader" in lines[i] or "Noninteractive mode attacker command" in lines[i]:
-                            command = re.split("(line from reader:)|(Noninteractive mode attacker command:) ", lines[i])
-                            command = command[3].strip()
-                            print(command)
+results = {}
 
-                    start = end + 1
-                    break
-    file.close()
+attacks = parser.getAllAttacks(".")
+for attack in attacks:
+    commands = reg.split(attack.noninteractiveCommand)
+    while ("" in commands):
+        commands.remove("")
+
+    for command in commands:
+        if command in results:
+            results[command] += 1
+        else:
+            results[command] = 1
+
+pp.pprint(results)
