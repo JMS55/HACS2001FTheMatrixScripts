@@ -18,7 +18,7 @@ for Attack in attacks:
 		if "Attacker connected" in line:
 			start_time = line.split()[0] + " " + (line.split()[1]).split(".")[0]
 			
-		if "Attacker closed the connection" in line:
+		if "Attacker closed connection" in line:
 			end_time = line.split()[0] + " " + (line.split()[1]).split(".")[0]
 				
 	if start_time != "" && end_time != "":
