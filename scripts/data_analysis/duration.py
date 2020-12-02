@@ -25,7 +25,7 @@ for Attack in attacks:
 	if start_time != "" and end_time != "":
 		end = datetime.strptime(end_time, date_format)
 		start = datetime.strptime(start_time, date_format)
-		out.write(str((end - start).seconds))
+		out.write(str((end - start).seconds) + "\n")
 	
 	
 out.close()
