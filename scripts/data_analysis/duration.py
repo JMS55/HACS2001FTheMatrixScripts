@@ -2,7 +2,7 @@ from datetime import datetime
 import parser
 
 
-out = open("durations.txt", "a")
+out = open("durations.txt", "w")
 
 attacks = parser.getAllAttacks(".")
 
