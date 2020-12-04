@@ -32,4 +32,5 @@ for Attack in attacks:
 			out2.write(str((end - start).seconds) + "\n")
 	
 	
-out.close()
+out1.close()
+out2.close()
