@@ -2,7 +2,8 @@ from datetime import datetime
 import parser
 
 
-out = open("durations.txt", "w")
+out1 = open("durations_control.txt", "a")
+out2 = open("durations_snoopy.txt", "a")
 
 attacks = parser.getAllAttacks(".")
 
@@ -25,7 +26,10 @@ for Attack in attacks:
 	if start_time != "" and end_time != "":
 		end = datetime.strptime(end_time, date_format)
 		start = datetime.strptime(start_time, date_format)
-		out.write(str((end - start).seconds) + "\n")
+		if Attack.template == 201:
+			out1.write(str((end - start).seconds) + "\n")
+		else:
+			out2.write(str((end - start).seconds) + "\n")
 	
 	
 out.close()
