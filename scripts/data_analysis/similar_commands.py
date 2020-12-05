@@ -28,6 +28,6 @@ for attack in attacks:
 
 pp.pprint("Control Results:")
 pp.pprint(results_control)
-print()
+print("")
 pp.pprint("Experimental Results:")
 pp.pprint(results_experimental)

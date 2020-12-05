@@ -12,6 +12,7 @@ class Attack:
         self.ip = ''
         self.success = False
         self.noninteractiveCommand = ''
+        self.isCat = False
 
 # Returns an array of attack objects
 def getAttacks(logFile):
@@ -44,6 +45,7 @@ def getAttacks(logFile):
             command = command_re.search(line)
             if command != None:
                 attack.noninteractiveCommand = command.group(1)
+                attack.isCat = attack.noninteractiveCommand.find("/proc/cpuinfo") != -1
         elif (line.find("SHELL") != -1):
             inAttack = False
             attack.success = False

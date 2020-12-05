@@ -26,6 +26,6 @@ for attack in attacks:
 
 print("Control Results:")
 print(results_control)
-print()
+print("")
 print("Experimental Results:")
 print(results_experimental)
