@@ -59,7 +59,13 @@ def getAllAttacks(directory):
     attacks102 = getAttacks(directory+'/log102.txt')
     attacks103 = getAttacks(directory+'/log103.txt')
     attacks104 = getAttacks(directory+'/log104.txt')
-    return attacks101 + attacks102 + attacks103 + attacks104
+    ips = set()
+    attacks = []
+    for attack in attacks101 + attacks102 + attacks103 + attacks104:
+        if not (attack.ip in ips):
+            ips.add(attack.ip)
+            attacks.append(attack)
+    return attacks
 
 #Use this method to collect data about attacks separated by template
 def attacksByTemplate():
