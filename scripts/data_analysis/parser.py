@@ -54,7 +54,7 @@ def getAttacks(logFile):
     return attacks
 
 # Returns an array of Attack Objects
-def getAllAttacks(directory):
+def getAllAttacks(directory, with_cat):
     attacks101 = getAttacks(directory+'/log101.txt')
     attacks102 = getAttacks(directory+'/log102.txt')
     attacks103 = getAttacks(directory+'/log103.txt')
@@ -63,8 +63,9 @@ def getAllAttacks(directory):
     attacks = []
     for attack in attacks101 + attacks102 + attacks103 + attacks104:
         if not (attack.ip in ips):
-            ips.add(attack.ip)
-            attacks.append(attack)
+            if with_cat or ((not attack.isCat) and (not with_cat)):
+                ips.add(attack.ip)
+                attacks.append(attack)
     return attacks
 
 #Use this method to collect data about attacks separated by template
