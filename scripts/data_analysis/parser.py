@@ -12,6 +12,7 @@ class Attack:
         self.ip = ''
         self.success = False
         self.noninteractiveCommand = ''
+        self.isCat = False
 
 # Returns an array of attack objects
 def getAttacks(logFile):
@@ -44,6 +45,7 @@ def getAttacks(logFile):
             command = command_re.search(line)
             if command != None:
                 attack.noninteractiveCommand = command.group(1)
+                attack.isCat = attack.noninteractiveCommand.find("/proc/cpuinfo") != -1
         elif (line.find("SHELL") != -1):
             inAttack = False
             attack.success = False
@@ -57,7 +59,13 @@ def getAllAttacks(directory):
     attacks102 = getAttacks(directory+'/log102.txt')
     attacks103 = getAttacks(directory+'/log103.txt')
     attacks104 = getAttacks(directory+'/log104.txt')
-    return attacks101 + attacks102 + attacks103 + attacks104
+    ips = set()
+    attacks = []
+    for attack in attacks101 + attacks102 + attacks103 + attacks104:
+        if not (attack.ip in ips):
+            ips.add(attack.ip)
+            attacks.append(attack)
+    return attacks
 
 #Use this method to collect data about attacks separated by template
 def attacksByTemplate():

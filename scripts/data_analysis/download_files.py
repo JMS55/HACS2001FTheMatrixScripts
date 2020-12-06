@@ -18,6 +18,6 @@ for attack in attacks:
 
 print("Total (Control): " + str(total_attacks_control))
 print("Download files (Control): " + str(download_file_attacks_control))
-print()
+print("")
 print("Total (Experimental): " + str(total_attacks_experimental))
 print("Download files (Experimental): " + str(download_file_attacks_experimental))
