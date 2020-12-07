@@ -10,11 +10,11 @@ def calc(with_cat):
     for attack in attacks:
         if attack.template == "201":
             total_attacks_control += 1
-            if "curl" in attack.noninteractiveCommand or "wget" in attack.noninteractiveCommand:
+            if "curl" in attack.noninteractiveCommand or "wget" in attack.noninteractiveCommand or "scp" in attack.noninteractiveCommand:
                 download_file_attacks_control += 1
         else:
             total_attacks_experimental += 1
-            if "curl" in attack.noninteractiveCommand or "wget" in attack.noninteractiveCommand:
+            if "curl" in attack.noninteractiveCommand or "wget" in attack.noninteractiveCommand or "scp" in attack.noninteractiveCommand:
                 download_file_attacks_experimental += 1
 
     print("With Cat?: " + str(with_cat))
